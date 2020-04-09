@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <div id="orsc"
+    <h2>The onreadystatechage</h2><br>
+    <button type="button" onclick="loadDoc()">onreadystatechage test</button>
+    </div>
+
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('orsc').innerHTML =
+                    this.responseText;
+                }
+            };
+            xhttp.open("GET", "step287.txt", true);
+            xhttp.send();
+        }
+    </script>
+
+</body>
+</html>
