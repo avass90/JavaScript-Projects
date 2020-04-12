@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <p>Click this paragraph, and view the action in Dev Tools!</p>
+
+    <p2>You better read fast before this message disappears!</p2>
+
+<script>
+    $("p").click(function() {
+        console.log( "You clicked the paragraph!" );
+    });
+
+    $("p2").hide(5000);
+
+</script>
+</body>
+</html>
